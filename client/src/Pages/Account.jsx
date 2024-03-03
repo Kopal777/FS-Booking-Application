@@ -7,6 +7,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import AddPlaces from './AddPlaces';
 import Places from './Places';
+import Bookings from './Bookings';
 
 function Account() {
   const [redirect, setRedirect] = useState(null);
@@ -64,6 +65,11 @@ function Account() {
       {subpage === 'places' && (
         <div>
           <Places/>
+        </div>
+      )}
+      {subpage === 'bookings' && (
+        <div>
+          <Bookings/>
         </div>
       )}
       {subpage === 'addplace' && (
