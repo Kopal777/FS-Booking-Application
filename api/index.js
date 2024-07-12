@@ -31,6 +31,10 @@ mongoose.connect("mongodb://0.0.0.0:27017/fsba")
     .then(() => console.log("connection successful"))
     .catch((err) => console.log(err));
 
+app.get('/', (req, res)=>{
+    res.send("hello");
+})
+
 
 app.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
