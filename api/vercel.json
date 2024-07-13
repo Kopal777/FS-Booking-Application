@@ -1,6 +1,10 @@
 {
     "version": 2,
     "builds": [
-       { "src": "index.js", "use": "@vercel/node" }
+       { "src": "index.js",
+         "use": "@vercel/node",
+         "config": {
+        "API_PORT": 3000 }
+      }
     ]
  }
