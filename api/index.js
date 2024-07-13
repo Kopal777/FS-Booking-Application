@@ -13,10 +13,10 @@ const jwtSecret = 'ghjkkjhgfghjk34567hbncnjhgvertyui7654vb';
 const imageDownloader = require('image-downloader');  
 const multer = require('multer');
 const fs = require('fs');
-const dotenv = require('dotenv');
-dotenv.config();
+// const dotenv = require('dotenv');
+// dotenv.config();
 
-const port = process.env.API_PORT;
+// const port = process.env.API_PORT;
 const app = express();
 
 app.use(cookieParser());
@@ -159,4 +159,4 @@ app.post('/booking', async (req,res)=>{
         res.json("ok");
     })
 })
-app.listen(port);
+app.listen(4000);
