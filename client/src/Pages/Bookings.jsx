@@ -20,7 +20,7 @@ function Bookings() {
         <Link to={`/account/bookings/${booking._id}`}>
           <div className='bg-gray-200 rounded-md '>
             <div className='flex gap-3'>
-              <img className='w-52 rounded-l-md' src={'http://localhost:4000/uploads/' + booking.place.photos[0]} alt="" />
+              <img className='w-52 rounded-l-md' src={'https://fs-booking-application.vercel.app/uploads/' + booking.place.photos[0]} alt="" />
               <div className='mt-5'>
                 <div className='text-lg font-medium'>
                   {booking.place.title}

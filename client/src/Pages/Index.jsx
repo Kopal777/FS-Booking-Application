@@ -16,7 +16,7 @@ function Index() {
         <div>
           <Link to={'/viewplace/' + place._id} className='bg-gray-500 rounded-2xl'>
             {place.photos?.[0] && (
-              <img className='rounded-2xl object-cover aspect-square' src={'http://localhost:4000/uploads/' + place.photos[0]} alt="" />
+              <img className='rounded-2xl object-cover aspect-square' src={'https://fs-booking-application.vercel.app/uploads/' + place.photos[0]} alt="" />
             )}
           </Link>
           <h2 className='text-sm mt-2 font-bold'>{place.title}</h2>

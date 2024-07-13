@@ -109,7 +109,7 @@ function AddPlaces() {
                         <div className='mt-2 gap-2 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
                             {addedPhotos.length > 0 && addedPhotos.map((link) => (
                                 <div className='flex h-52'>
-                                    <img className='rounded-2xl w-full' src={'http://localhost:4000/uploads/' + link} alt="" />
+                                    <img className='rounded-2xl w-full' src={'https://fs-booking-application.vercel.app/uploads/' + link} alt="" />
                                 </div>
                             ))}
                             <label className='cursor-pointer flex items-center justify-center border bg-transparent rounded-2xl text-gray-600 p-8'>

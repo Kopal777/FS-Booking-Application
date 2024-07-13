@@ -17,7 +17,7 @@ function PlaceGallery({ addedPhotos, title }) {
                     {addedPhotos?.length > 0 && addedPhotos.map(photo => (
 
                         <div className='flex justify-center'>
-                            <img className='w-[55%]' src={'http://localhost:4000/uploads/' + photo} alt="" />
+                            <img className='w-[55%]' src={'https://fs-booking-application.vercel.app/uploads/' + photo} alt="" />
                         </div>
 
                     ))}
@@ -33,17 +33,17 @@ function PlaceGallery({ addedPhotos, title }) {
                     <div>
                         {addedPhotos?.[0] && (
                             <div>
-                                <img className="aspect-square object-cover" src={'http://localhost:4000/uploads/' + addedPhotos[0]} alt="" />
+                                <img className="aspect-square object-cover" src={'https://fs-booking-application.vercel.app/uploads/' + addedPhotos[0]} alt="" />
                             </div>
                         )}
                     </div>
                     <div className="grid">
                         {addedPhotos?.[1] && (
-                            <img className="aspect-square object-cover" src={'http://localhost:4000/uploads/' + addedPhotos[1]} alt="" />
+                            <img className="aspect-square object-cover" src={'https://fs-booking-application.vercel.app/uploads/' + addedPhotos[1]} alt="" />
                         )}
                         <div className="overflow-hidden">
                             {addedPhotos?.[2] && (
-                                <img className="aspect-square object-cover relative top-2" src={'http://localhost:4000/uploads/' + addedPhotos[2]} alt="" />
+                                <img className="aspect-square object-cover relative top-2" src={'https://fs-booking-application.vercel.app/uploads/' + addedPhotos[2]} alt="" />
                             )}
                         </div>
                     </div>

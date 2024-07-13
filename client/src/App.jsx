@@ -12,7 +12,7 @@ import ViewPlace from "./Pages/ViewPlace";
 import BookingPage from "./Pages/BookingPage";
 import AddPlaces from "./Pages/AddPlaces";
 
-axios.defaults.baseURL = "http://localhost:4000";                           //Setting up the default url in order to eliminate the need for writing it again and again.
+axios.defaults.baseURL = "https://fs-booking-application.vercel.app";                           //Setting up the default url in order to eliminate the need for writing it again and again.
 axios.defaults.withCredentials = true;                                      //Setting up deafult credentials as true to enable cookies.
 
 function App() {
