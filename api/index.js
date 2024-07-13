@@ -16,7 +16,7 @@ const fs = require('fs');
 const dotenv = require('dotenv');
 dotenv.config();
 
-
+const port = process.env.API_PORT || 4000;
 const app = express();
 
 app.use(cookieParser());
@@ -159,4 +159,4 @@ app.post('/booking', async (req,res)=>{
         res.json("ok");
     })
 })
-app.listen(process.env.API_PORT);
+app.listen(port);
