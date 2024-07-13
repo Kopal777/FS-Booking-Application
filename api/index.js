@@ -16,7 +16,7 @@ const fs = require('fs');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const port = process.env.API_PORT || 4000;
+const port = process.env.API_PORT;
 const app = express();
 
 app.use(cookieParser());
