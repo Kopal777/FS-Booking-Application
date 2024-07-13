@@ -32,7 +32,7 @@ mongoose.connect("mongodb://0.0.0.0:27017/fsba")
     .catch((err) => console.log(err));
 
 app.get('/', (req, res)=>{
-    res.send("hello");
+    res.json("hello");
 })
 
 
